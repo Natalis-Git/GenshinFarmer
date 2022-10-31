@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20220929193245_AddReferences.cs" />
+    <Compile Remove="Migrations\20220929193245_AddReferences.Designer.cs" />
+    <Compile Remove="Migrations\20220930153111_AddReferences.cs" />
+    <Compile Remove="Migrations\20220930153111_AddReferences.Designer.cs" />
+    <Compile Remove="Migrations\20220930153559_AddReferences.cs" />
+    <Compile Remove="Migrations\20220930153559_AddReferences.Designer.cs" />
+    <Compile Remove="Migrations\20221007153129_AddSeeding.cs" />
+    <Compile Remove="Migrations\20221007153129_AddSeeding.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.28">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.28" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.28">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>

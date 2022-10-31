@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+@model LoginViewModel
+
+@Html.AntiForgeryToken()
+
+
+<div class="text-center" style="padding-top:250px">
+    <h2 class="text-custom-main">Admin Access</h2>
+    <h5 class="text-custom-main">Enter password:</h5>
+
+    <form action="Login" method="post">
+        <input style="width: 250px" type="text" name="accessCode" />
+        <button type="submit">Login</button>
+    </form>
+
+    @if(Model.EnteredIncorrectCode == true)
+    {
+        <p style="padding-top:5px; color:red">
+                Invalid Password.
+        </p>
+    }
+</div>

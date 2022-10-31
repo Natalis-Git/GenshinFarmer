@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+@Html.AntiForgeryToken()
+
+<header style="padding:50px">
+    <form style="text-align:right" action="admin/Logout" method="post">
+        <button type="submit">Logout</button>
+    </form>
+</header>
+
+<div class="text-center">
+    <h1 class="text-custom-main">Admin Home</h1>
+
+    <div>
+        <button class="custom-vertical" onclick="location.href='@Url.Action("EditCharacters")'">Characters</button>
+        <button class="custom-vertical" onclick="location.href='@Url.Action("EditWeapons")'">Weapons</button>
+        <button class="custom-vertical" onclick="location.href='@Url.Action("EditUpgrades")'">Upgrades</button>
+        <button class="custom-vertical" onclick="location.href='@Url.Action("EditMaterials")'">Materials</button>
+    </div>
+</div>
+

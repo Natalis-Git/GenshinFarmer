@@ -1,0 +1,3 @@
+This project is a simple web tool for the game Genshin Impact to allow players to view and add materials needed to upgrade/create in-game upgradables such as characters and weapons. While there are currently other tools like this in existance, most are bloated and overly complex. This project is aiming specifically to be clean, simple and convenient, as well as not requiring an account. The tool will also come with a simple and easy to use API to allow for anyone to make use of it with Discord bots and other genshin clients/tools.
+
+Project is currently an early work in progress and thus the site is not yet being hosted online.
